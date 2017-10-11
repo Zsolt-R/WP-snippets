@@ -88,3 +88,22 @@ echo '<!-- Paste your ad code here. -->';
 echo '<div class="article">' . $content_parts['extended'] . '</div>';
  
 endwhile;
+
+/* ------------------------------------------------------------------------------------ */
+
+/**
+* Use add_action with parameters
+* Pass argument to the callback function inside add_action
+* Use PHP anonymous functions with 'use' keyword.
+*/
+
+//EX. Callback function
+function wps_theme_site_logo($class = false) {
+	//... function content ...
+}
+
+// Add argument to function
+$css_class = 'u-lap-and-up-hide';
+add_action('wps_theme_header_left',function() use ($css_class){
+     wps_theme_site_logo('u-lap-and-up-hide');
+});
