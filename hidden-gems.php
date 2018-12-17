@@ -107,3 +107,7 @@ $css_class = 'u-lap-and-up-hide';
 add_action('wps_theme_header_left',function() use ($css_class){
      wps_theme_site_logo('u-lap-and-up-hide');
 });
+
+/* ------------------------------------------------------------------------------------ */
+/* NICE VAR_DUMP */
+highlight_string("<?php\n\$data =\n" . var_export($venue_location, true) . ";\n?>");
