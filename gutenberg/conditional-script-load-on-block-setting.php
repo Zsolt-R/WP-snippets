@@ -1,3 +1,4 @@
+<?php
 /**
 * @url https://github.com/WordPress/WordPress/blob/master/wp-includes/blocks.php
 * @url https://developer.wordpress.org/reference/hooks/render_block_data/
