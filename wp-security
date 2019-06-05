@@ -1,4 +1,5 @@
  <?php
+ 
  /**
   * SECURITY
   */
@@ -39,3 +40,4 @@ function prefix_redirect_attachment_page() {
 	}
 }
 add_action( 'template_redirect', 'prefix_redirect_attachment_page' );
+?>
